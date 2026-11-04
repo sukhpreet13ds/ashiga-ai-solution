@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashiga AI Solution | Metal Recycling & Recovery</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="#home" class="nav-logo" aria-label="Ashiga Homepage">
+                    <img src="assets/ashiga-logo.png" alt="Ashiga Logo">
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#process" class="nav-link">Our Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#recovered-metals" class="nav-link">Recovered Metals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <!-- Mobile View CTA (shown inside drawer on small screens) -->
+                    <li class="nav-item mobile-cta-item">
+                        <a href="#contact" class="btn btn-enquire">Enquire Now</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Enquire Button & Mobile Toggle -->
+                <div class="nav-actions">
+                    <a href="#contact" class="btn btn-enquire nav-desktop-btn">Enquire Now</a>
+                    
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <!-- 3 Background Animated Slides -->
+            <div class="hero-slider" id="heroSlider">
+                <!-- Slide 1: Add your image path inside src="" -->
+                <div class="hero-slide active">
+                    <img src="assets/slide1.jpg" alt="Hero Slide 1" class="hero-slide-img" style="transform: scaleX(-1);">
+                    <div class="slide-fallback-bg slide-bg-1"></div>
+                </div>
+
+                <!-- Slide 2: Add your image path inside src="" -->
+                <div class="hero-slide">
+                    <img src="assets/slide2.jpg" alt="Hero Slide 2" class="hero-slide-img" style="transform: scaleX(-1);">
+                    <div class="slide-fallback-bg slide-bg-2"></div>
+                </div>
+
+                <!-- Slide 3: Add your image path inside src="" -->
+                <div class="hero-slide">
+                    <img src="assets/slide3.jpg" alt="Hero Slide 3" class="hero-slide-img" >
+                    <div class="slide-fallback-bg slide-bg-3"></div>
+                </div>
+            </div>
+
+            <!-- Blackish Overlay Layer -->
+            <div class="hero-overlay"></div>
+
+            <!-- Hero Main Container -->
+            <div class="hero-container">
+                <!-- Left Side: Content from content.txt -->
+                <div class="hero-content">
+                    <!-- Tag Title -->
+                    <div class="hero-tag">
+                        <span class="tag-pulse"></span>
+                        <span class="tag-text">Sustainable Metal Recycling & Recovery</span>
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title">
+                        Transforming Metal Scrap Into <span class="highlight-text">Valuable Resources</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-description">
+                        We specialize in processing and recycling copper-bearing scrap to recover valuable metals like copper, aluminium, and iron. By transforming scrap into reusable industrial resources, we support a sustainable future and promote a circular economy.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="hero-actions">
+                        <a href="#process" class="btn btn-primary">
+                            <span>Explore Our Process</span>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust / Highlights micro metrics -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">99.8%</span>
+                            <span class="stat-label">Recovery Purity</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-value">Zero</span>
+                            <span class="stat-label">Landfill Waste</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-value">Eco</span>
+                            <span class="stat-label">Circular Economy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: 4 Images Grid Type -->
+                <div class="hero-media">
+                    <div class="hero-grid-header">
+                        <span class="grid-badge">Recycled Materials</span>
+                    </div>
+                    
+                    <div class="hero-images-grid">
+                        <!-- Grid Image 1: Add your image in src="" -->
+                        <div class="grid-card">
+                            <img src="assets/hero1.jpg" alt="Copper Scrap Recovery" class="grid-card-img">
+                            <div class="grid-placeholder">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="placeholder-tag">Slot 01</span>
+                                <span class="placeholder-title">Copper Recovery</span>
+                            </div>
+                            <div class="grid-card-overlay">
+                                <span class="card-caption">Copper Scrap</span>
+                            </div>
+                        </div>
+
+                        <!-- Grid Image 2: Add your image in src="" -->
+                        <div class="grid-card">
+                            <img src="assets/hero2.jpg" alt="Aluminium Recovery" class="grid-card-img">
+                            <div class="grid-placeholder">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="placeholder-tag">Slot 02</span>
+                                <span class="placeholder-title">Aluminium Recovery</span>
+                            </div>
+                            <div class="grid-card-overlay">
+                                <span class="card-caption">Aluminium Scrap</span>
+                            </div>
+                        </div>
+
+                        <!-- Grid Image 3: Add your image in src="" -->
+                        <div class="grid-card">
+                            <img src="assets/hero3.jpg" alt="Iron Recovery" class="grid-card-img">
+                            <div class="grid-placeholder">
+                                <div class="placeholder-icon"> 
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="placeholder-tag">Slot 03</span>
+                                <span class="placeholder-title">Iron Processing</span>
+                            </div>
+                            <div class="grid-card-overlay">
+                                <span class="card-caption">Iron Processing</span>
+                            </div>
+                        </div>
+
+                        <!-- Grid Image 4: Add your image in src="" -->
+                        <div class="grid-card">
+                            <img src="assets/hero4.jpg " alt="Industrial Recycling" class="grid-card-img">
+                            <div class="grid-placeholder">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="placeholder-tag">Slot 04</span>
+                                <span class="placeholder-title">Refined Ingot / Output</span>
+                            </div>
+                            <div class="grid-card-overlay">
+                                <span class="card-caption">Refined Output</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Navigation Indicators -->
+            <div class="slider-controls">
+                <button class="slider-dot active" data-slide="0" aria-label="Go to Slide 1"></button>
+                <button class="slider-dot" data-slide="1" aria-label="Go to Slide 2"></button>
+                <button class="slider-dot" data-slide="2" aria-label="Go to Slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Banner Section (Stats & Slogan) -->
+        <section class="banner-section" id="about">
+            <div class="banner-container">
+                <div class="banner-wrapper">
+                    <!-- Slogan / Heading -->
+                    <div class="banner-col banner-title-col">
+                        <div class="banner-badge">
+                            <span class="banner-badge-dot"></span>
+                            <span>Eco Vision</span>
+                        </div>
+                        <h2 class="banner-heading">
+                            <span class="banner-highlight">Recycle Today</span>
+                            <span class="banner-sub">For A Greener tomorrow</span>
+                        </h2>
+                    </div>
+
+                    <div class="banner-divider"></div>
+
+                    <!-- Stat 1: 70+ Years of Experience -->
+                    <div class="banner-col banner-stat-col">
+                        <div class="banner-stat-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="6"></circle>
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                            </svg>
+                        </div>
+                        <div class="banner-stat-data">
+                            <div class="banner-number">
+                                <span class="stat-count">70</span><span class="stat-plus">+</span>
+                            </div>
+                            <div class="banner-label">
+                                <span class="label-strong">Years of</span>
+                                <span class="label-muted">Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner-divider"></div>
+
+                    <!-- Stat 2: 3,08,306 MTPA Authorised Recycling Capacity -->
+                    <div class="banner-col banner-stat-col">
+                        <div class="banner-stat-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                                <line x1="12" y1="22" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="banner-stat-data">
+                            <div class="banner-number">
+                                <span class="stat-count">3,08,306</span>
+                                <span class="stat-unit">MTPA</span>
+                            </div>
+                            <div class="banner-label">
+                                <span class="label-strong">Authorised</span>
+                                <span class="label-muted">Recycling Capacity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="services-section" id="process">
+            <div class="services-container">
+                <!-- Section Header -->
+                <div class="services-header">
+                    <div class="services-tag">
+                        <span class="tag-pulse"></span>
+                        <span class="tag-text">What We Do</span>
+                    </div>
+                    <h2 class="services-main-title">
+                        Our Specialized <span class="highlight-text">Recycling Services</span>
+                    </h2>
+                    <p class="services-subtitle">
+                        Transforming complex metal scrap into premium reusable resources through proven metallurgical recovery and recycling processes.
+                    </p>
+                </div>
+
+                <!-- 6 Service Items Grid (Default 3 columns desktop, 2 columns mobile & unfolded phones) -->
+                <div class="services-grid">
+                    <!-- Service 1: Copper-Bearing Scrap Processing -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv1.jpg" alt="Copper-Bearing Scrap Processing" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 01</span>
+                            <h3 class="service-title">Copper-Bearing Scrap Processing</h3>
+                            <p class="service-desc">Processing copper-containing scrap materials to recover valuable metals for further industrial use.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Metal Scrap Recycling -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv2.jpg" alt="Metal Scrap Recycling" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="23 4 23 10 17 10"></polyline>
+                                        <polyline points="1 20 1 14 7 14"></polyline>
+                                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 02</span>
+                            <h3 class="service-title">Metal Scrap Recycling</h3>
+                            <p class="service-desc">Recycling and converting mixed metal scrap into reusable raw materials through efficient processing methods.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Copper Recovery -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv3.jpg" alt="Copper Recovery" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 03</span>
+                            <h3 class="service-title">Copper Recovery</h3>
+                            <p class="service-desc">Recovering copper from copper-bearing scrap and preparing it for reuse in industrial manufacturing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Aluminium Recovery -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv4.jpg" alt="Aluminium Recovery" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 04</span>
+                            <h3 class="service-title">Aluminium Recovery</h3>
+                            <p class="service-desc">Separating and recovering aluminium from processed scrap materials for further industrial applications.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Iron Recovery -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv5.jpg" alt="Iron Recovery" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 05</span>
+                            <h3 class="service-title">Iron Recovery</h3>
+                            <p class="service-desc">Extracting and separating iron from scrap materials to produce reusable metal resources.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Recovered Metal Supply -->
+                    <div class="service-item">
+                        <div class="service-img-wrapper">
+                            <img src="assets/serv6.jpg" alt="Recovered Metal Supply" class="service-img">
+                            <div class="service-img-placeholder">
+                                <div class="service-icon-box">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="1" y="3" width="15" height="13"></rect>
+                                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <span class="service-num-tag">Service 06</span>
+                            <h3 class="service-title">Recovered Metal Supply</h3>
+                            <p class="service-desc">Supplying recovered copper, aluminium and iron to furnaces and foundries for further processing and manufacturing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="script/script.js"></script>
+</body>
+</html>

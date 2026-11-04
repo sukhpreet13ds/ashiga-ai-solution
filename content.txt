@@ -1,0 +1,19 @@
+Navigation Items
+1. Home
+2. About Us
+3. Our Process
+4. Recovered Metals
+5. Contact Us
+Hero Section
+Tag Title:
+Sustainable Metal Recycling & Recovery
+
+Title:
+Transforming Metal Scrap Into Valuable Resources
+
+Description:
+We specialize in processing and recycling copper-bearing scrap to recover valuable metals like copper, aluminium, and iron. By transforming scrap into reusable industrial resources, we support a sustainable future and promote a circular economy.
+
+CTA:
+- Explore Our Process
+- Contact Us

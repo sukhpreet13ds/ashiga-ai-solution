@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashiga AI Solution | Metal Recycling & Recovery</title>
+    <link rel="icon" href="assets/favicon.ico">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
 
     <!-- Header & Navigation -->
@@ -19,38 +26,34 @@
         <nav class="navbar">
             <div class="nav-container">
                 <!-- Logo -->
-                <a href="#home" class="nav-logo" aria-label="Ashiga Homepage">
+                <a href="index.html" class="nav-logo" aria-label="Ashiga Homepage">
                     <img src="assets/ashiga-logo.png" alt="Ashiga Logo">
                 </a>
 
                 <!-- Navigation Links -->
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="about-us.html" class="nav-link">About Us</a>
                     </li>
+
                     <li class="nav-item">
-                        <a href="#process" class="nav-link">Our Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#recovered-metals" class="nav-link">Recovered Metals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact Us</a>
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
                     </li>
                     <!-- Mobile View CTA (shown inside drawer on small screens) -->
                     <li class="nav-item mobile-cta-item">
-                        <a href="#contact" class="btn btn-enquire">Enquire Now</a>
+                        <a href="contact-us.html" class="btn btn-enquire">Enquire Now</a>
                     </li>
                 </ul>
 
                 <!-- Right Side Enquire Button & Mobile Toggle -->
                 <div class="nav-actions">
-                    <a href="#contact" class="btn btn-enquire nav-desktop-btn">Enquire Now</a>
-                    
-                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <a href="contact-us.html" class="btn btn-enquire nav-desktop-btn">Enquire Now</a>
+
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu"
+                        aria-expanded="false">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -68,19 +71,21 @@
             <div class="hero-slider" id="heroSlider">
                 <!-- Slide 1: Add your image path inside src="" -->
                 <div class="hero-slide active">
-                    <img src="assets/slide1.jpg" alt="Hero Slide 1" class="hero-slide-img" style="transform: scaleX(-1);">
+                    <img src="assets/slide1.jpg" alt="Hero Slide 1" class="hero-slide-img"
+                        style="transform: scaleX(-1);">
                     <div class="slide-fallback-bg slide-bg-1"></div>
                 </div>
 
                 <!-- Slide 2: Add your image path inside src="" -->
                 <div class="hero-slide">
-                    <img src="assets/slide2.jpg" alt="Hero Slide 2" class="hero-slide-img" style="transform: scaleX(-1);">
+                    <img src="assets/slide2.jpg" alt="Hero Slide 2" class="hero-slide-img"
+                        style="transform: scaleX(-1);">
                     <div class="slide-fallback-bg slide-bg-2"></div>
                 </div>
 
                 <!-- Slide 3: Add your image path inside src="" -->
                 <div class="hero-slide">
-                    <img src="assets/slide3.jpg" alt="Hero Slide 3" class="hero-slide-img" >
+                    <img src="assets/slide3.jpg" alt="Hero Slide 3" class="hero-slide-img">
                     <div class="slide-fallback-bg slide-bg-3"></div>
                 </div>
             </div>
@@ -105,14 +110,17 @@
 
                     <!-- Description -->
                     <p class="hero-description">
-                        We specialize in processing and recycling copper-bearing scrap to recover valuable metals like copper, aluminium, and iron. By transforming scrap into reusable industrial resources, we support a sustainable future and promote a circular economy.
+                        We specialize in processing and recycling copper-bearing scrap to recover valuable metals like
+                        copper, aluminium, and iron. By transforming scrap into reusable industrial resources, we
+                        support a sustainable future and promote a circular economy.
                     </p>
 
                     <!-- CTAs -->
                     <div class="hero-actions">
                         <a href="#process" class="btn btn-primary">
                             <span>Explore Our Process</span>
-                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
@@ -144,16 +152,17 @@
                 <!-- Right Side: 4 Images Grid Type -->
                 <div class="hero-media">
                     <div class="hero-grid-header">
-                        <span class="grid-badge">Recycled Materials</span>
+                        <span class="grid-badge" style="color: #fff;">GST No.: 03BEGPP9234L2Z5</span>
                     </div>
-                    
+
                     <div class="hero-images-grid">
                         <!-- Grid Image 1: Add your image in src="" -->
                         <div class="grid-card">
                             <img src="assets/hero1.jpg" alt="Copper Scrap Recovery" class="grid-card-img">
                             <div class="grid-placeholder">
                                 <div class="placeholder-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                         <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                         <polyline points="21 15 16 10 5 21"></polyline>
@@ -172,7 +181,8 @@
                             <img src="assets/hero2.jpg" alt="Aluminium Recovery" class="grid-card-img">
                             <div class="grid-placeholder">
                                 <div class="placeholder-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                         <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                         <polyline points="21 15 16 10 5 21"></polyline>
@@ -190,8 +200,9 @@
                         <div class="grid-card">
                             <img src="assets/hero3.jpg" alt="Iron Recovery" class="grid-card-img">
                             <div class="grid-placeholder">
-                                <div class="placeholder-icon"> 
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <div class="placeholder-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                         <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                         <polyline points="21 15 16 10 5 21"></polyline>
@@ -210,7 +221,8 @@
                             <img src="assets/hero4.jpg " alt="Industrial Recycling" class="grid-card-img">
                             <div class="grid-placeholder">
                                 <div class="placeholder-icon">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                         <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                         <polyline points="21 15 16 10 5 21"></polyline>
@@ -256,7 +268,8 @@
                     <!-- Stat 1: 70+ Years of Experience -->
                     <div class="banner-col banner-stat-col">
                         <div class="banner-stat-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="8" r="6"></circle>
                                 <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
                             </svg>
@@ -277,8 +290,11 @@
                     <!-- Stat 2: 3,08,306 MTPA Authorised Recycling Capacity -->
                     <div class="banner-col banner-stat-col">
                         <div class="banner-stat-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
                                 <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                 <line x1="12" y1="22" x2="12" y2="12"></line>
                             </svg>
@@ -311,7 +327,8 @@
                         Our Specialized <span class="highlight-text">Recycling Services</span>
                     </h2>
                     <p class="services-subtitle">
-                        Transforming complex metal scrap into premium reusable resources through proven metallurgical recovery and recycling processes.
+                        Transforming complex metal scrap into premium reusable resources through proven metallurgical
+                        recovery and recycling processes.
                     </p>
                 </div>
 
@@ -323,7 +340,8 @@
                             <img src="assets/serv1.jpg" alt="Copper-Bearing Scrap Processing" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                                         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                     </svg>
@@ -333,7 +351,14 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 01</span>
                             <h3 class="service-title">Copper-Bearing Scrap Processing</h3>
-                            <p class="service-desc">Processing copper-containing scrap materials to recover valuable metals for further industrial use.</p>
+                            <p class="service-desc">Processing copper-containing scrap materials to recover valuable
+                                metals for further industrial use.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Copper-Bearing%20Scrap%20Processing%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Copper-Bearing Scrap Processing on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
 
@@ -343,10 +368,12 @@
                             <img src="assets/serv2.jpg" alt="Metal Scrap Recycling" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="23 4 23 10 17 10"></polyline>
                                         <polyline points="1 20 1 14 7 14"></polyline>
-                                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                        </path>
                                     </svg>
                                 </div>
                             </div>
@@ -354,7 +381,14 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 02</span>
                             <h3 class="service-title">Metal Scrap Recycling</h3>
-                            <p class="service-desc">Recycling and converting mixed metal scrap into reusable raw materials through efficient processing methods.</p>
+                            <p class="service-desc">Recycling and converting mixed metal scrap into reusable raw
+                                materials through efficient processing methods.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Metal%20Scrap%20Recycling%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Metal Scrap Recycling on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
 
@@ -364,7 +398,8 @@
                             <img src="assets/serv3.jpg" alt="Copper Recovery" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                                         <polyline points="2 17 12 22 22 17"></polyline>
                                         <polyline points="2 12 12 17 22 12"></polyline>
@@ -375,7 +410,14 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 03</span>
                             <h3 class="service-title">Copper Recovery</h3>
-                            <p class="service-desc">Recovering copper from copper-bearing scrap and preparing it for reuse in industrial manufacturing.</p>
+                            <p class="service-desc">Recovering copper from copper-bearing scrap and preparing it for
+                                reuse in industrial manufacturing.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Copper%20Recovery%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Copper Recovery on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
 
@@ -385,7 +427,8 @@
                             <img src="assets/serv4.jpg" alt="Aluminium Recovery" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <circle cx="12" cy="12" r="6"></circle>
                                         <circle cx="12" cy="12" r="2"></circle>
@@ -396,7 +439,14 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 04</span>
                             <h3 class="service-title">Aluminium Recovery</h3>
-                            <p class="service-desc">Separating and recovering aluminium from processed scrap materials for further industrial applications.</p>
+                            <p class="service-desc">Separating and recovering aluminium from processed scrap materials
+                                for further industrial applications.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Aluminium%20Recovery%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Aluminium Recovery on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
 
@@ -406,7 +456,8 @@
                             <img src="assets/serv5.jpg" alt="Iron Recovery" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                     </svg>
                                 </div>
@@ -415,7 +466,14 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 05</span>
                             <h3 class="service-title">Iron Recovery</h3>
-                            <p class="service-desc">Extracting and separating iron from scrap materials to produce reusable metal resources.</p>
+                            <p class="service-desc">Extracting and separating iron from scrap materials to produce
+                                reusable metal resources.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Iron%20Recovery%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Iron Recovery on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
 
@@ -425,7 +483,8 @@
                             <img src="assets/serv6.jpg" alt="Recovered Metal Supply" class="service-img">
                             <div class="service-img-placeholder">
                                 <div class="service-icon-box">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#BB800F"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="1" y="3" width="15" height="13"></rect>
                                         <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
                                         <circle cx="5.5" cy="18.5" r="2.5"></circle>
@@ -437,19 +496,525 @@
                         <div class="service-content">
                             <span class="service-num-tag">Service 06</span>
                             <h3 class="service-title">Recovered Metal Supply</h3>
-                            <p class="service-desc">Supplying recovered copper, aluminium and iron to furnaces and foundries for further processing and manufacturing.</p>
+                            <p class="service-desc">Supplying recovered copper, aluminium and iron to furnaces and
+                                foundries for further processing and manufacturing.</p>
+                            <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution%2C%20I%20am%20interested%20in%20your%20Recovered%20Metal%20Supply%20service.%20Please%20share%20more%20details."
+                                target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn"
+                                aria-label="Enquire about Recovered Metal Supply on WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Inquire Now</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-      
+        <!-- About Section -->
+        <section class="about-section" id="about-section">
+            <div class="about-container">
+                <div class="about-grid">
+                    <!-- Left: Visual Image & Floating Badges -->
+                    <div class="about-visual">
+                        <div class="about-image-wrapper">
+                            <img src="assets/hero2.jpg" alt="Metal Scrap Recovery Facility" class="about-main-img">
+                            <div class="about-img-overlay"></div>
+                        </div>
 
+                        <!-- Floating Experience Card -->
+                        <div class="about-exp-card">
+                            <div class="about-exp-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="about-exp-text">
+                                <span class="exp-val">70+</span>
+                                <span class="exp-sub">Years of Metallurgy Mastery</span>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Eco Badge -->
+                        <div class="about-eco-card">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>100% Closed-Loop Circular Process</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="about-content">
+                        <div class="section-tag">
+                            <span class="tag-pulse"></span>
+                            <span class="tag-text">About Ashiga AI Solution</span>
+                        </div>
+
+                        <h2 class="section-heading">
+                            Pioneering Sustainable <span class="highlight-text">Scrap Metal Recovery</span> Across The
+                            Globe
+                        </h2>
+
+                        <p class="about-lead">
+                            At Ashiga AI Solution, we transform industrial metal waste into premier-grade secondary
+                            resources, championing the circular economy with proven metallurgical expertise.
+                        </p>
+
+                        <p class="about-desc">
+                            Specializing in copper-bearing scraps, mixed non-ferrous and ferrous metals, our licensed
+                            facilities leverage advanced sorting and refining lines. We supply high-purity ingots,
+                            cathodes, and feeds directly to leading foundries, smelters, and manufacturing plants
+                            worldwide.
+                        </p>
+
+                        <!-- Key Highlights -->
+                        <div class="about-features">
+                            <div class="about-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Advanced Separation Tech</h4>
+                                    <p>High-precision hydrometallurgical & eddy-current sorting reaching 99.8% purity.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Certified Sustainable Operations</h4>
+                                    <p>Strict environmental adherence ensuring zero hazardous landfill residue.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Furnace-Ready Supply Chain</h4>
+                                    <p>Reliable recurring bulk raw material delivery for global foundries and mills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="about-us.html" class="btn btn-primary">
+                                <span>Discover Our Story</span>
+                                <i class="fa-solid fa-arrow-right btn-icon"></i>
+                            </a>
+                            <a href="contact-us.html" class="btn btn-secondary">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-counter-section">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-recycle"></i>
+                        </div>
+                        <div class="stat-number">
+                            <span class="counter">3,08,306</span>
+                            <span class="stat-symbol">MTPA</span>
+                        </div>
+                        <h4 class="stat-title">Authorised Capacity</h4>
+                        <p class="stat-caption">Government-licensed volume for advanced scrap processing & recovery.</p>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="stat-number">
+                            <span class="counter">70</span>
+                            <span class="stat-symbol">+</span>
+                        </div>
+                        <h4 class="stat-title">Years of Experience</h4>
+                        <p class="stat-caption">Seven decades of metallurgical trust, engineering excellence, and
+                            safety.</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number">
+                            <span class="counter">99.8</span>
+                            <span class="stat-symbol">%</span>
+                        </div>
+                        <h4 class="stat-title">Recovery Purity</h4>
+                        <p class="stat-caption">Ultra-clean copper, aluminium, and iron suitable for casting and
+                            smelting.</p>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="stat-number">
+                            <span class="counter">30</span>
+                            <span class="stat-symbol">+</span>
+                        </div>
+                        <h4 class="stat-title">Global Cities Served</h4>
+                        <p class="stat-caption">Active distribution network supplying manufacturing hubs across
+                            continents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fullscreen Slider Section with Left-Side Box Content -->
+        <section class="fullscreen-slider-section" id="process-showcase">
+            <div class="fs-slider-container" id="fullscreenSlider">
+                <!-- Slide 1 -->
+                <div class="fs-slide active">
+                    <img src="assets/slide1.jpg" alt="Metal Smelting and Refining" class="fs-slide-bg"
+                        style="transform: scaleX(-1);">
+                    <div class="fs-slide-overlay"></div>
+                    <div class="fs-content-container">
+                        <div class="fs-slide-box">
+                            <span class="fs-box-tag">Phase 01 / Metallurgy</span>
+                            <h3 class="fs-box-title">State-of-the-Art Smelting & Refining</h3>
+                            <p class="fs-box-desc">
+                                Deploying automated magnetic separators, eddy currents, and high-temperature furnaces to
+                                extract ultra-pure copper and aluminium from complex scrap streams.
+                            </p>
+                            <div class="fs-box-actions">
+                                <a href="contact-us.html" class="btn btn-primary">
+                                    <span>Learn More</span>
+                                    <i class="fa-solid fa-arrow-right btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="fs-slide">
+                    <img src="assets/slide2.jpg" alt="Industrial Metal Recycling" class="fs-slide-bg"
+                        style="transform: scaleX(-1);">
+                    <div class="fs-slide-overlay"></div>
+                    <div class="fs-content-container">
+                        <div class="fs-slide-box">
+                            <span class="fs-box-tag">Phase 02 / Circularity</span>
+                            <h3 class="fs-box-title">Eco-Friendly Metal Scrap Processing</h3>
+                            <p class="fs-box-desc">
+                                Converting copper-bearing scrap residues into furnace-ready ingots and premium secondary
+                                alloys through environmentally controlled, emission-compliant workflows.
+                            </p>
+                            <div class="fs-box-actions">
+                                <a href="about-us.html" class="btn btn-primary">
+                                    <span>Our Process</span>
+                                    <i class="fa-solid fa-arrow-right btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="fs-slide">
+                    <img src="assets/slide3.jpg" alt="Furnace Ready Supply" class="fs-slide-bg">
+                    <div class="fs-slide-overlay"></div>
+                    <div class="fs-content-container">
+                        <div class="fs-slide-box">
+                            <span class="fs-box-tag">Phase 03 / Logistics</span>
+                            <h3 class="fs-box-title">Certified Foundry & Furnace Feeds</h3>
+                            <p class="fs-box-desc">
+                                Supplying certified secondary raw materials with exact assay analyses to premier
+                                foundries, continuous casting mills, and manufacturing plants worldwide.
+                            </p>
+                            <div class="fs-box-actions">
+                                <a href="contact-us.html" class="btn btn-primary">
+                                    <span>Request Quotation</span>
+                                    <i class="fa-solid fa-arrow-right btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="fs-controls">
+                <button class="fs-nav-btn prev" id="fsPrevBtn" aria-label="Previous Slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="fs-dots" id="fsDots">
+                    <button class="fs-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="fs-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="fs-dot" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+                <button class="fs-nav-btn next" id="fsNextBtn" aria-label="Next Slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Countries / Cities We Serve Section (Map with Animated Bubble Location Icons) -->
+        <section class="global-presence-section" id="recovered-metals">
+            <div class="global-container">
+                <div class="global-header">
+                    <div class="section-tag">
+                        <span class="tag-pulse"></span>
+                        <span class="tag-text">Global Footprint</span>
+                    </div>
+                    <h2 class="section-heading">
+                        Serving in <span class="highlight-text">30+ Cities</span> Across the World!
+                    </h2>
+                    <p class="global-subtitle">
+                        Supplying high-grade recovered copper, aluminium, and iron scrap to casting foundries, rolling
+                        mills, and automotive fabricators across major industrial continents.
+                    </p>
+                </div>
+
+                <!-- Map Canvas Container -->
+                <div class="map-wrapper" id="worldMapWrapper">
+                    <div class="map-inner">
+                        <img src="assets/map.png" alt="Ashiga Global Network Map" class="world-map-img">
+
+                        <!-- 6 Animated Bubble Location Pins -->
+                        <!-- Pin 1: North America (New York / Chicago) -->
+                        <div class="map-pin pin-1" style="top: 41%; left: 23%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">New York, USA</span>
+                                <span class="pin-info">Americas Scrap & Foundry Hub</span>
+                            </div>
+                        </div>
+
+                        <!-- Pin 2: South America (São Paulo) -->
+                        <div class="map-pin pin-2" style="top: 67%; left: 33%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">São Paulo, Brazil</span>
+                                <span class="pin-info">South America Ingot Logistics</span>
+                            </div>
+                        </div>
+
+                        <!-- Pin 3: Europe (London / Rotterdam) -->
+                        <div class="map-pin pin-3" style="top: 35%; left: 51%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">London, UK</span>
+                                <span class="pin-info">European Distribution Network</span>
+                            </div>
+                        </div>
+
+                        <!-- Pin 4: Middle East (Dubai) -->
+                        <div class="map-pin pin-4" style="top: 48%; left: 60%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">Dubai, UAE</span>
+                                <span class="pin-info">Middle East Trading Gateway</span>
+                            </div>
+                        </div>
+
+                        <!-- Pin 5: South Asia (Ludhiana / Delhi) -->
+                        <div class="map-pin pin-5" style="top: 51%; left: 70%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">Ludhiana, India</span>
+                                <span class="pin-info">Primary Smelting & Refining Facility</span>
+                            </div>
+                        </div>
+
+                        <!-- Pin 6: East Asia (Tokyo / Singapore) -->
+                        <div class="map-pin pin-6" style="top: 55%; left: 83%;">
+                            <div class="pin-bubble"></div>
+                            <div class="pin-bubble-outer"></div>
+                            <div class="pin-marker">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="pin-tooltip">
+                                <span class="pin-city">Tokyo, Japan</span>
+                                <span class="pin-info">Asia-Pacific Automotive Feedstocks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Badges / Cities Strip -->
+                <div class="global-cities-strip">
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> New York</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> London</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> Dubai</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> Ludhiana</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> Tokyo</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> Singapore</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> Rotterdam</div>
+                    <div class="city-pill"><i class="fa-solid fa-city"></i> São Paulo</div>
+                    <div class="city-pill highlight-pill">+25 More Worldwide</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <div class="section-tag cta-tag">
+                            <span class="tag-pulse"></span>
+                            <span class="tag-text">Get Started Today</span>
+                        </div>
+                        <h2 class="cta-heading">
+                            Ready to Transform Your Metal Scrap Into <span class="highlight-text">Valuable
+                                Resources?</span>
+                        </h2>
+                        <p class="cta-desc">
+                            Partner with Ashiga AI Solution for certified scrap processing, transparent assays, and
+                            reliable circular supply for foundries and smelters worldwide.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact-us.html" class="btn btn-primary">
+                                <span>Enquire Now</span>
+                                <i class="fa-solid fa-arrow-right btn-icon"></i>
+                            </a>
+                            <a href="about-us.html" class="btn btn-secondary">
+                                <span>Learn More About Us</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Column 1: Brand & Bio -->
+                    <div class="footer-col footer-brand-col">
+                        <a href="index.html" class="footer-logo">
+                            <img src="assets/ashiga-logo.png" alt="Ashiga Logo">
+                        </a>
+                        <p class="footer-bio">
+                            Leading the sustainable metal transformation. Specialized in processing copper-bearing
+                            scrap, recovering aluminium and iron, and powering a circular industrial economy.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Services -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#process">Copper-Bearing Scrap</a></li>
+                            <li><a href="#process">Metal Scrap Recycling</a></li>
+                            <li><a href="#process">Copper Recovery</a></li>
+                            <li><a href="#process">Aluminium Recovery</a></li>
+                            <li><a href="#process">Iron Recovery</a></li>
+                            <li><a href="#process">Recovered Metal Supply</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact Info -->
+                    <div class="footer-col footer-contact-col">
+                        <h4 class="footer-title">Contact Us</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot contact-icon"></i>
+                                <span>2693/2, Basti Jodhewal, Ludhiana,Punjab 141008</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone contact-icon"></i>
+                                <span>+91 98765 43210</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope contact-icon"></i>
+                                <span>info@ashigaindia.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-clock contact-icon"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-container bottom-container">
+                <p class="copyright-text">
+                    &copy; 2026 Ashiga AI Solution. All Rights Reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="sep">•</span>
+                    <a href="terms-condition.html">Terms of Service</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Animated WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Ashiga%20AI%20Solution,%20I%20would%20like%20to%20inquire%20about%20your%20metal%20recycling%20and%20recovery%20services."
+        class="floating-whatsapp" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with Ashiga AI Solution on WhatsApp">
+        <div class="whatsapp-pulse"></div>
+        <div class="whatsapp-pulse-outer"></div>
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
 
     <!-- Scripts -->
     <script src="script/script.js"></script>
 </body>
+
 </html>

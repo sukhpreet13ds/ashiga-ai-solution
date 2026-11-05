@@ -154,5 +154,128 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // -------------------------------------------------------------------------
+    // 4. Fullscreen Slider Section (with Left-Side Boxes)
+    // -------------------------------------------------------------------------
+    const fsSlides = document.querySelectorAll('.fs-slide');
+    const fsDots = document.querySelectorAll('.fs-dot');
+    const fsPrevBtn = document.getElementById('fsPrevBtn');
+    const fsNextBtn = document.getElementById('fsNextBtn');
+    const fsSlider = document.getElementById('fullscreenSlider');
+
+    if (fsSlides.length > 0) {
+        let currentFsSlide = 0;
+        let fsSlideTimer = null;
+        const fsSlideDuration = 5500;
+
+        function goToFsSlide(index) {
+            const target = (index + fsSlides.length) % fsSlides.length;
+            fsSlides[currentFsSlide].classList.remove('active');
+            if (fsDots[currentFsSlide]) fsDots[currentFsSlide].classList.remove('active');
+
+            currentFsSlide = target;
+            fsSlides[currentFsSlide].classList.add('active');
+            if (fsDots[currentFsSlide]) fsDots[currentFsSlide].classList.add('active');
+        }
+
+        function startFsTimer() {
+            stopFsTimer();
+            fsSlideTimer = setInterval(() => goToFsSlide(currentFsSlide + 1), fsSlideDuration);
+        }
+
+        function stopFsTimer() {
+            if (fsSlideTimer) {
+                clearInterval(fsSlideTimer);
+                fsSlideTimer = null;
+            }
+        }
+
+        if (fsNextBtn) {
+            fsNextBtn.addEventListener('click', () => {
+                goToFsSlide(currentFsSlide + 1);
+                startFsTimer();
+            });
+        }
+
+        if (fsPrevBtn) {
+            fsPrevBtn.addEventListener('click', () => {
+                goToFsSlide(currentFsSlide - 1);
+                startFsTimer();
+            });
+        }
+
+        fsDots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                goToFsSlide(idx);
+                startFsTimer();
+            });
+        });
+
+        if (fsSlider) {
+            fsSlider.addEventListener('mouseenter', stopFsTimer);
+            fsSlider.addEventListener('mouseleave', startFsTimer);
+        }
+
+        startFsTimer();
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. World Map Location Pins Animation on Scroll
+    // -------------------------------------------------------------------------
+    const mapWrapper = document.getElementById('worldMapWrapper');
+    if (mapWrapper) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    mapWrapper.classList.add('pins-animated');
+                    observer.unobserve(mapWrapper);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        observer.observe(mapWrapper);
+    }
+
+    // -------------------------------------------------------------------------
+    // 6. Scroll-Triggered animate__fadeInUp on Section Elements (animate.style)
+    // -------------------------------------------------------------------------
+    const sectionElements = document.querySelectorAll(
+        '.hero-tag, .hero-title, .hero-description, .hero-actions, .hero-stats, ' +
+        '.hero-grid-header, .hero-images-grid .grid-card, ' +
+        '.page-hero-breadcrumbs, .page-hero-title, .page-hero-subtitle, ' +
+        '.banner-col, ' +
+        '.services-header, .service-item, ' +
+        '.about-visual, .about-content, ' +
+        '.stat-card, ' +
+        '.global-header, .map-wrapper, .global-cities-strip, ' +
+        '.cta-card, ' +
+        '.footer-col, ' +
+        '.editorial-header, .editorial-lead, .editorial-highlight, .about-two-images, .editorial-bullets, .editorial-cta-bar, ' +
+        '.contact-info-panel, .contact-form-panel, .contact-map-wrapper'
+    );
+
+    if (sectionElements.length > 0 && 'IntersectionObserver' in window) {
+        sectionElements.forEach(el => {
+            el.classList.add('animate-on-scroll');
+        });
+
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    entry.target.classList.remove('animate-on-scroll');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.05,
+            rootMargin: '0px 0px -20px 0px'
+        });
+
+        sectionElements.forEach(el => {
+            sectionObserver.observe(el);
+        });
+    }
 });
 

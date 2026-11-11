@@ -252,7 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
         '.cta-card, ' +
         '.footer-col, ' +
         '.editorial-header, .editorial-lead, .editorial-highlight, .about-two-images, .editorial-bullets, .editorial-cta-bar, ' +
-        '.contact-info-panel, .contact-form-panel, .contact-map-wrapper'
+        '.contact-info-panel, .contact-form-panel, .contact-map-wrapper, ' +
+        '.intro-content-wrapper, .materials-header, .material-card, .materials-action, ' +
+        '.facility-content, .facility-visual, .process-header, .process-flow-header, .circular-step-card, .recovered-metals-block, .process-action'
     );
 
     if (sectionElements.length > 0 && 'IntersectionObserver' in window) {

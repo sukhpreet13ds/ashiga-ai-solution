@@ -2820,3 +2820,740 @@ button {
 .stats-grid .stat-card:nth-child(2) { animation-delay: 0.15s; }
 .stats-grid .stat-card:nth-child(3) { animation-delay: 0.25s; }
 .stats-grid .stat-card:nth-child(4) { animation-delay: 0.35s; }
+
+
+/* ==========================================================================
+   Sections from content.txt (Directly after Hero Section)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Introduction Section
+   -------------------------------------------------------------------------- */
+.intro-section {
+    position: relative;
+    padding: 80px 24px 60px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border-bottom: 1px solid rgba(187, 128, 15, 0.12);
+}
+
+.intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-content-wrapper {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.intro-content-wrapper .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    /* background: rgba(187, 128, 15, 0.08); */
+    /* border: 1px solid rgba(187, 128, 15, 0.25); */
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.intro-main-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.intro-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-lead {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+.intro-highlight-line {
+    background: #ffffff;
+    border-left: 4px solid var(--accent-color);
+    border-top: 1px solid rgba(187, 128, 15, 0.15);
+    border-right: 1px solid rgba(187, 128, 15, 0.15);
+    border-bottom: 1px solid rgba(187, 128, 15, 0.15);
+    padding: 20px 28px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    text-align: left;
+}
+
+.intro-focus {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--color-text-dark);
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   2. Materials We Process Section
+   -------------------------------------------------------------------------- */
+.materials-process-section {
+    position: relative;
+    padding: 90px 24px 80px;
+    background: #ffffff;
+}
+
+.materials-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.materials-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.materials-header .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    /* background: rgba(187, 128, 15, 0.08); */
+    /* border: 1px solid rgba(187, 128, 15, 0.25); */
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.materials-main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.materials-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 45px;
+}
+
+.material-card {
+    background: #ffffff;
+    border: 1px solid rgba(187, 128, 15, 0.18);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    transition: var(--transition-smooth);
+}
+
+.material-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 16px 36px rgba(187, 128, 15, 0.15);
+}
+
+.material-img-wrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background: #0e1520;
+}
+
+.material-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.material-card:hover .material-img {
+    transform: scale(1.08);
+}
+
+.material-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(8, 12, 18, 0.85);
+    backdrop-filter: blur(8px);
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(187, 128, 15, 0.35);
+}
+
+.material-card-content {
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.material-card-title {
+    font-size: 1.22rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 12px;
+    line-height: 1.35;
+    transition: color 0.25s ease;
+}
+
+.material-card:hover .material-card-title {
+    color: var(--accent-color);
+}
+
+.material-card-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.materials-action {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   3. Our Facility Section
+   -------------------------------------------------------------------------- */
+.facility-section {
+    position: relative;
+    padding: 90px 24px;
+    background: #f8fafc;
+    border-top: 1px solid rgba(187, 128, 15, 0.1);
+    border-bottom: 1px solid rgba(187, 128, 15, 0.1);
+}
+
+.facility-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.facility-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-header .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(187, 128, 15, 0.08);
+    border: 1px solid rgba(187, 128, 15, 0.25);
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.facility-main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+}
+
+.facility-desc {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 32px;
+}
+
+.facility-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.facility-metric-card {
+    background: #ffffff;
+    border: 1px solid rgba(187, 128, 15, 0.2);
+    border-radius: 14px;
+    padding: 20px 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+    /* border-top: 3px solid var(--accent-color); */
+    transition: var(--transition-fast);
+}
+
+.facility-metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(187, 128, 15, 0.12);
+}
+
+.facility-metric-card .metric-num {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.facility-metric-card .metric-lbl {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
+
+.facility-visual {
+    position: relative;
+}
+
+.facility-image-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(187, 128, 15, 0.25);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    background: #000;
+}
+
+.facility-img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.facility-image-card:hover .facility-img {
+    transform: scale(1.04);
+}
+
+.facility-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(8, 12, 18, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(187, 128, 15, 0.4);
+    border-radius: 14px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.facility-badge-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--accent-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.facility-badge-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.facility-badge-sub {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   4. Our Process & Recovered Metals Section
+   -------------------------------------------------------------------------- */
+.process-flow-section {
+    position: relative;
+    padding: 90px 24px;
+    background: #ffffff;
+}
+
+.process-container,
+.process-flow-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.process-header,
+.process-flow-header {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 50px;
+}
+
+.process-header .section-tag,   
+.process-flow-header .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    /* background: rgba(187, 128, 15, 0.08); */
+    /* border: 1px solid rgba(187, 128, 15, 0.25); */
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.process-main-title,
+.process-flow-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.process-subtitle,
+.process-flow-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* Circular Flow Steps */
+.process-steps-circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto 55px;
+    position: relative;
+}
+
+.circular-step-card {
+    flex: 1 1 0;
+    max-width: 255px;
+    background: #ffffff;
+    border: 1px solid rgba(187, 128, 15, 0.2);
+    border-radius: 16px;
+    padding: 28px 18px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.circular-step-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 14px 32px rgba(187, 128, 15, 0.14);
+}
+
+/* Big Numbering inside the box behind content */
+.step-bg-number {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(187, 128, 15, 0.13);
+    font-family: var(--font-main);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.circular-step-card:hover .step-bg-number {
+    color: rgba(187, 128, 15, 0.24);
+    transform: scale(1.05);
+}
+
+/* Icon without background and without border */
+.step-icon-circle {
+    width: auto;
+    height: auto;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 2.2rem;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.circular-step-card:hover .step-icon-circle {
+    transform: scale(1.1);
+    color: #cf8f15;
+}
+
+.step-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    line-height: 1.35;
+    position: relative;
+    z-index: 1;
+}
+
+.step-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+    position: relative;
+    z-index: 1;
+}
+
+/* Arrow Connector centered between cards */
+.step-arrow-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    margin: 0 2px;
+    opacity: 0.85;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.step-arrow-connector:hover {
+    transform: translateX(3px);
+    color: #cf8f15;
+}
+
+/* Recovered Metals Block */
+.recovered-metals-block {
+    background: #f8fafc;
+    border: 1px solid rgba(187, 128, 15, 0.18);
+    border-radius: 20px;
+    padding: 44px 36px 36px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.02);
+}
+
+.recovered-metals-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 36px;
+}
+
+.recovered-metals-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+.recovered-metals-sub {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.recovered-metals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.recovered-metal-card {
+    background: #ffffff;
+    border: 1px solid rgba(187, 128, 15, 0.18);
+    border-radius: 14px;
+    padding: 24px 22px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+    transition: var(--transition-smooth);
+}
+
+.recovered-metal-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 28px rgba(187, 128, 15, 0.12);
+}
+
+.recovered-metal-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-color) 0%, #d49a24 100%);
+}
+
+.metal-symbol {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: rgba(187, 128, 15, 0.1);
+    color: var(--accent-color);
+    border: 1px solid rgba(187, 128, 15, 0.25);
+    margin-bottom: 12px;
+}
+
+.recovered-metal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+.recovered-metal-desc {
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.process-note-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border-left: 4px solid var(--accent-color);
+    border-top: 1px solid rgba(187, 128, 15, 0.15);
+    border-right: 1px solid rgba(187, 128, 15, 0.15);
+    border-bottom: 1px solid rgba(187, 128, 15, 0.15);
+    padding: 18px 24px;
+    border-radius: 0 12px 12px 0;
+}
+
+.process-note-icon {
+    font-size: 1.35rem;
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.process-note-text {
+    font-size: 0.96rem;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+
+.process-action {
+    text-align: center;
+}
+
+/* Stagger delays for new section cards */
+.materials-grid .material-card:nth-child(1) { animation-delay: 0.05s; }
+.materials-grid .material-card:nth-child(2) { animation-delay: 0.15s; }
+.materials-grid .material-card:nth-child(3) { animation-delay: 0.25s; }
+.materials-grid .material-card:nth-child(4) { animation-delay: 0.35s; }
+
+.process-steps-circular .circular-step-card:nth-of-type(1) { animation-delay: 0.05s; }
+.process-steps-circular .circular-step-card:nth-of-type(2) { animation-delay: 0.15s; }
+.process-steps-circular .circular-step-card:nth-of-type(3) { animation-delay: 0.25s; }
+.process-steps-circular .circular-step-card:nth-of-type(4) { animation-delay: 0.35s; }
+
+.recovered-metals-grid .recovered-metal-card:nth-child(1) { animation-delay: 0.1s; }
+.recovered-metals-grid .recovered-metal-card:nth-child(2) { animation-delay: 0.2s; }
+.recovered-metals-grid .recovered-metal-card:nth-child(3) { animation-delay: 0.3s; }
+
+.metal-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.metal-symbol-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    background: rgba(187, 128, 15, 0.12);
+    color: var(--accent-color);
+    border: 1px solid rgba(187, 128, 15, 0.35);
+}
+
+.metal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+
+.metal-desc {
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.metal-accent-line {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent-color) 0%, rgba(187, 128, 15, 0.15) 100%);
+}
+
+.recovered-metals-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(187, 128, 15, 0.25);
+}
+
+.lot-note {
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    font-weight: 500;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lot-note i {
+    color: var(--accent-color);
+}

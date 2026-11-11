@@ -10,7 +10,11 @@
     .fs-content-container,
     .global-container,
     .cta-container,
-    .footer-container {
+    .footer-container,
+    .intro-container,
+    .materials-container,
+    .facility-container,
+    .process-container {
         max-width: 1440px;
     }
 }
@@ -33,6 +37,13 @@
 
     .hero-title {
         font-size: 3.5rem;
+    }
+
+    .intro-container,
+    .materials-container,
+    .facility-container,
+    .process-container {
+        max-width: 1360px;
     }
 }
 
@@ -80,6 +91,34 @@
 
     .footer-grid {
         gap: 36px;
+    }
+
+    .intro-container,
+    .materials-container,
+    .facility-container,
+    .process-container {
+        max-width: 1140px;
+    }
+
+    .materials-grid {
+        gap: 20px;
+    }
+
+    .facility-grid {
+        gap: 36px;
+    }
+
+    .process-circular-wrapper {
+        max-width: 1040px;
+    }
+
+    .process-quadrant-grid {
+        gap: 65px 190px;
+    }
+
+    .process-center-hub {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -188,6 +227,88 @@
     .footer-grid {
         grid-template-columns: 1.2fr 1fr 1fr 1fr;
         gap: 30px;
+    }
+
+    .intro-container,
+    .materials-container,
+    .facility-container,
+    .process-container {
+        padding: 0 20px;
+    }
+
+    .materials-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    .material-card-content {
+        padding: 18px 14px;
+    }
+
+    .material-card-title {
+        font-size: 1.08rem;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .facility-img {
+        height: 380px;
+    }
+
+    .process-circular-wrapper {
+        max-width: 940px;
+    }
+
+    .process-quadrant-grid {
+        gap: 55px 150px;
+    }
+
+    .process-center-hub {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hub-inner-card {
+        padding: 12px;
+    }
+
+    .hub-core-title {
+        font-size: 0.95rem;
+    }
+
+    .process-steps-circular {
+        gap: 8px;
+    }
+
+    .circular-step-card {
+        padding: 22px 14px;
+        max-width: 230px;
+    }
+
+    .step-bg-number {
+        font-size: 4rem;
+        top: 6px;
+        right: 8px;
+    }
+
+    .step-icon-circle {
+        font-size: 1.9rem;
+    }
+
+    .step-title {
+        font-size: 1.05rem;
+    }
+
+    .step-desc {
+        font-size: 0.85rem;
+    }
+
+    .step-arrow-connector {
+        font-size: 1.15rem;
+        width: 20px;
     }
 }
 
@@ -450,6 +571,123 @@ font-size: 30px;
     font-size: 18px;
 }
 
+    .intro-section,
+    .materials-process-section,
+    .facility-section,
+    .process-flow-section {
+        padding: 60px 20px;
+    }
+
+    .intro-main-title,
+    .materials-main-title,
+    .facility-main-title,
+    .process-main-title,
+    .process-flow-title {
+        font-size: 2.1rem;
+    }
+
+    .materials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .material-img-wrapper {
+        height: 200px;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .facility-img {
+        height: 340px;
+    }
+
+    .facility-metrics {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+    .process-circular-wrapper {
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    .process-quadrant-grid {
+        gap: 40px 90px;
+    }
+
+    .process-center-hub {
+        width: 155px;
+        height: 155px;
+    }
+
+    .hub-icon-wrap {
+        width: 36px;
+        height: 36px;
+        font-size: 1.15rem;
+        margin-bottom: 4px;
+    }
+
+    .hub-brand-name {
+        font-size: 0.62rem;
+    }
+
+    .hub-core-title {
+        font-size: 0.88rem;
+        margin: 1px 0 4px;
+    }
+
+    .hub-cycle-badge {
+        font-size: 0.62rem;
+        padding: 2px 8px;
+    }
+
+    .process-steps-circular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 680px;
+        margin: 0 auto 50px;
+    }
+
+    .circular-step-card {
+        padding: 24px 18px;
+        max-width: 100%;
+    }
+
+    .step-bg-number {
+        font-size: 4rem;
+        top: 6px;
+        right: 10px;
+    }
+
+    .step-icon-circle {
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        border: none !important;
+        font-size: 1.85rem;
+        margin-bottom: 12px;
+    }
+
+    .step-title {
+        font-size: 1.05rem;
+    }
+
+    .step-desc {
+        font-size: 0.85rem;
+    }
+
+    .step-arrow-connector {
+        display: none !important;
+    }
+
+    .recovered-metals-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
 }
 
 /*  4. MOBILE (Separate) */
@@ -1149,5 +1387,254 @@ font-size: 30px;
 
     .service-whatsapp-btn {
         padding: 1px 8px;
+    }
+
+    /* New sections from content.txt for Mobile */
+    .intro-section,
+    .materials-process-section,
+    .facility-section,
+    .process-flow-section {
+        padding: 50px 16px;
+    }
+
+    .intro-main-title,
+    .materials-main-title,
+    .facility-main-title,
+    .process-main-title,
+    .process-flow-title {
+        font-size: 1.75rem;
+    }
+
+    .intro-lead {
+        font-size: 1.02rem;
+    }
+
+    .intro-highlight-line {
+        padding: 16px 18px;
+    }
+
+    .intro-focus {
+        font-size: 1rem;
+    }
+
+    .materials-header,
+    .process-header,
+    .process-flow-header {
+        margin-bottom: 35px;
+    }
+
+    /* Materials Grid 2x2 on Mobile as requested */
+    .materials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .material-card {
+        border-radius: 12px;
+    }
+
+    .material-img-wrapper {
+        height: 135px;
+    }
+
+    .material-badge {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .material-card-content {
+        padding: 12px 10px;
+    }
+
+    .material-card-title {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+        line-height: 1.3;
+    }
+
+    .material-card-desc {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .facility-metrics {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .facility-metric-card {
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .facility-metric-card .metric-num {
+        font-size: 1.35rem;
+        margin-bottom: 0;
+    }
+
+    .facility-img {
+        height: 260px;
+    }
+
+    .facility-badge {
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+        padding: 10px 14px;
+    }
+
+    .facility-badge-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .facility-badge-title {
+        font-size: 0.85rem;
+    }
+
+    .facility-badge-sub {
+        font-size: 0.75rem;
+    }
+
+    /* Circular Flow Process Steps (Mobile) */
+    .process-circular-wrapper {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .process-orbit-ring {
+        display: none;
+    }
+
+    .process-center-hub {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 170px;
+        height: 170px;
+        margin: 0 auto 30px;
+    }
+
+    .hub-icon-wrap {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .hub-core-title {
+        font-size: 0.95rem;
+    }
+
+    .process-quadrant-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .step-pos-01,
+    .step-pos-02,
+    .step-pos-03,
+    .step-pos-04 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .process-steps-circular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .circular-step-card {
+        padding: 20px 12px 16px;
+        border-radius: 14px;
+        max-width: 100%;
+    }
+
+    .step-bg-number {
+        font-size: 3.2rem;
+        top: 4px;
+        right: 8px;
+    }
+
+    .step-icon-circle {
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        border: none !important;
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .step-title {
+        font-size: 0.94rem;
+        margin-bottom: 6px;
+    }
+
+    .step-desc {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .step-arrow-connector {
+        display: none !important;
+    }
+
+    /* Recovered Metals Block */
+    .recovered-metals-block {
+        padding: 28px 16px 22px;
+        border-radius: 14px;
+        margin-bottom: 30px;
+    }
+
+    .recovered-metals-title {
+        font-size: 1.4rem;
+    }
+
+    .recovered-metals-sub {
+        font-size: 0.9rem;
+    }
+
+    .recovered-metals-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 24px;
+    }
+
+    .recovered-metal-card {
+        padding: 18px 16px;
+    }
+
+    .recovered-metal-title {
+        font-size: 1.1rem;
+    }
+
+    .process-note-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 16px;
+        gap: 10px;
+    }
+
+    .process-note-icon {
+        font-size: 1.2rem;
+    }
+
+    .process-note-text {
+        font-size: 0.88rem;
     }
 }

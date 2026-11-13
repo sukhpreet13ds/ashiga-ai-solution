@@ -1,79 +1,81 @@
-*Introduction*
+*CONTACT US PAGE*
 
-*Specialist Materials. Practical Expertise.*
+*Page Heading*
 
-Effective metal recovery begins with understanding the scrap. Motor size, construction and metal composition all influence how materials should be assessed, sorted and processed.
+*Let’s Discuss Your Material Requirement*
 
-At Ashiga India, our focus is on recovering usable metals from complex assemblies and preparing them for their next stage of industrial use.
+Contact Ashiga India to offer scrap, enquire about recovered metals or discuss a recurring business requirement.
 
+*Selling Scrap?*
 
-Next section
-[For this section i have added images for it:
-process1.webp
-process2.png
-process3.jpg
-process4.jpg
-and in mobile show 2x2 in desktop show horizontal 4 but as per screensize adjust the count of cards to show below as per screen size.]
+Please share:
 
-*Materials We Process*
+- Material type and description
+- Approximate quantity
+- Material location
+- Recent photographs
+- Whether the offer is a single lot or recurring supply
 
-*Electric Motor Scrap*  
-Small, large and mixed electric motors containing copper windings, aluminium components and ferrous metals.
+For overseas offers, please also include the loading port and proposed shipment terms.
 
-*Alternator Scrap*  
-Automotive alternators processed to separate copper windings, aluminium housings and ferrous components.
+*Buying Recovered Metals?*
 
-*Selected Appliance Scrap*  
-Selected motor-bearing appliances and assemblies, assessed according to their composition and processing requirements.
+Please share:
 
-*Other Metal-Bearing Materials*  
-Additional scrap grades considered following a review of material details, photographs, quantity and location.
+- Required metal and grade
+- Quantity
+- Material specifications, where applicable
+- Delivery location
+- Required delivery timing
 
-*Button:* Offer Your Material   
+*Processing Facility*
 
+Sahnewal, Ludhiana, Punjab, India
 
-Next section:
+54,000 sq ft covered processing facility  
+25,000 MT annual processing capacity
 
-*Our Facility*
+*Enquiry Form Heading*
 
-*The Space to Process. The Knowledge to Recover.*
+*Send Us Your Requirement*
 
-Our 54,000 sq ft covered processing facility in Sahnewal, Ludhiana, has an annual processing capacity of 25,000 metric tonnes.
+Share the details below, and our team will contact you to discuss your enquiry.
 
-The facility brings together scrap sorting, dismantling, processing and recovered-material handling, supporting the movement of metal-bearing scrap into saleable metal streams.
+*Form Fields*
 
-*Button:* About Ashiga
+- Full Name
+- Company Name
+- Email Address
+- Phone / WhatsApp Number
+- Enquiry Type
+- Material Type
+- Approximate Quantity
+- Location
+- Message / Requirements
 
+*Enquiry Type Options*
 
-Next Section:
-[Show this is in like process way like circlular kind of process beauiful arrows kind of]
-*Our Process*
+- Sell Electric Motor Scrap
+- Sell Alternator Scrap
+- Offer Other Scrap Materials
+- Buy Recovered Copper
+- Buy Recovered Aluminium
+- Buy Ferrous Scrap
+- Discuss Recurring Business
+- General Enquiry
 
-*From Scrap to Recovered Metals*
+*Message Field Placeholder*
 
-*01 — Sourcing and Assessment*  
-We assess the material type, condition and composition to establish suitability and agree commercial terms.
+Describe your material or requirement, including grade, quantity, location and any relevant specifications.
 
-*02 — Sorting and Processing*  
-Scrap is sorted and processed using dismantling and separation methods suited to its construction and material characteristics.
+*Submit Button*
 
-*03 — Metal Recovery*  
-Copper, aluminium and ferrous components are separated and organised into saleable material streams.
+Send Enquiry
 
-*04 — Supply to Industry*  
-Recovered metals are supplied to trade and industrial buyers against agreed material descriptions and specifications.
+*WhatsApp Button*
 
-*Recovered Metals*
+Chat With Ashiga
 
-*Copper*  
-Recovered copper, including winding wire, offered according to the available grade and condition.
+*Default WhatsApp Message*
 
-*Aluminium*  
-Aluminium recovered from housings, castings and other components, sorted according to material type.
-
-*Ferrous Metals*  
-Recovered iron and steel components supplied for further recycling and processing.
-
-Material availability, composition and commercial terms are confirmed for each lot.
-
-*Button:* Enquire About Available Materials
+Hello Ashiga India, I would like to discuss a scrap supply or recovered-metal requirement.

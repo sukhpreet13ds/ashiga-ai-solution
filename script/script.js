@@ -254,7 +254,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.editorial-header, .editorial-lead, .editorial-highlight, .about-two-images, .editorial-bullets, .editorial-cta-bar, ' +
         '.contact-info-panel, .contact-form-panel, .contact-map-wrapper, ' +
         '.intro-content-wrapper, .materials-header, .material-card, .materials-action, ' +
-        '.facility-content, .facility-visual, .process-header, .process-flow-header, .circular-step-card, .recovered-metals-block, .process-action'
+        '.facility-content, .facility-visual, .process-header, .process-flow-header, .circular-step-card, .recovered-metals-block, .process-action, ' +
+        '.working-with-header, .working-card, .purpose-box'
     );
 
     if (sectionElements.length > 0 && 'IntersectionObserver' in window) {
@@ -278,6 +279,19 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionElements.forEach(el => {
             sectionObserver.observe(el);
         });
+    }
+
+    // -------------------------------------------------------------------------
+    // 7. Seamless Loop for About Us Gallery Images (Every 1.5 Seconds)
+    // -------------------------------------------------------------------------
+    const loopImages = document.querySelectorAll('.about-loop-img');
+    if (loopImages.length > 1) {
+        let currentLoopIdx = 0;
+        setInterval(() => {
+            loopImages[currentLoopIdx].classList.remove('active');
+            currentLoopIdx = (currentLoopIdx + 1) % loopImages.length;
+            loopImages[currentLoopIdx].classList.add('active');
+        }, 1500);
     }
 });
 

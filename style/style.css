@@ -2700,6 +2700,47 @@ button {
     transform: scale(1.15);
 }
 
+.service-subdesc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin-top: 10px;
+}
+
+.service-actions-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.btn-service-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: var(--accent-color);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.btn-service-action:hover {
+    background: var(--accent-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(187, 128, 15, 0.35);
+}
+
+.service-actions-wrapper .service-whatsapp-btn {
+    margin-top: 0;
+}
+
 /* ==========================================================================
    Floating Animated WhatsApp Button
    ========================================================================== */
@@ -2977,7 +3018,7 @@ button {
 .material-card {
     background: #ffffff;
     border: 1px solid rgba(187, 128, 15, 0.18);
-    border-radius: 16px;
+    border-radius: 2px;
     overflow: hidden;
     display: flex;
     flex-direction: column;

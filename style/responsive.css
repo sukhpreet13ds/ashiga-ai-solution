@@ -568,12 +568,14 @@
     .btn-secondary {
         font-size: 20px;
     }
-.stat-value {
-font-size: 30px;
-}
-.grid-badge{
-    font-size: 18px;
-}
+
+    .stat-value {
+        font-size: 30px;
+    }
+
+    .grid-badge {
+        font-size: 18px;
+    }
 
     .intro-section,
     .materials-process-section,
@@ -703,6 +705,24 @@ font-size: 30px;
     .recovered-metals-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
+    }
+
+    .material-card-title {
+        font-size: 16px;
+    }
+
+    .material-card-desc {
+
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .material-whatsapp-btn {
+        font-size: 11px;
+    }
+
+    .material-card-content {
+        padding: 24px 16px;
     }
 }
 
@@ -988,7 +1008,7 @@ font-size: 30px;
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 
@@ -1201,7 +1221,7 @@ font-size: 30px;
 
     /* CTA Section (Mobile) */
     .cta-section {
-        padding: 50px 0 60px;
+        padding: 0px 0 60px;
     }
 
     .cta-card {
@@ -1453,6 +1473,10 @@ font-size: 30px;
     }
 
     .material-img-wrapper {
+        height: 288px;
+    }
+
+    .material-img-wrapper-home {
         height: 135px;
     }
 
@@ -1476,6 +1500,7 @@ font-size: 30px;
     .material-card-desc {
         font-size: 0.78rem;
         line-height: 1.45;
+        margin-bottom: 15px;
     }
 
     .material-whatsapp-btn {
